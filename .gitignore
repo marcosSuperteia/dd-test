@@ -1,0 +1,10 @@
+postgres-data
+*.env
+.env
+__pycache__/
+node_modules/
+.devcontainer/
+*:Zone.Identifier
+/venv
+/requirements.txt
+/backend/logs

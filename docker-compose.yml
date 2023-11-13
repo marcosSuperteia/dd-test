@@ -1,0 +1,51 @@
+version: "3"
+services:
+  app:
+    image: frontend
+    build: ./frontend
+    container_name: frontend
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+
+  web:
+    build:
+      context: ./backend
+      args:
+        - ENVIRONMENT=${ENVIRONMENT}
+    volumes:
+      - ./backend:/app
+      - ./backend/app/logs:/app/logs
+    image: pythonweb     
+    container_name: backend
+    ports:
+      - "${PORT}:8000"
+    depends_on:
+      - db
+    env_file:
+      - .env
+
+  db:
+    image: postgres:12-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    env_file:
+      - .env
+
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile # Mount your Caddy configuration file
+    depends_on:
+      - web
+      - app
+
+volumes:
+  postgres_data:

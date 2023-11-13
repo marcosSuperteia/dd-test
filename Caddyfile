@@ -1,0 +1,10 @@
+{
+	local_certs
+	auto_https disable_redirects
+}
+
+http://127.0.0.1:80 {
+    reverse_proxy /api/* http://web:8000
+    reverse_proxy http://app:8080
+    tls internal
+}
