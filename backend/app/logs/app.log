@@ -43226,3 +43226,1372 @@ TypeError: remove() takes 2 positional arguments but 3 were given
 2023-11-13 14:04:11,394 - INFO - uvicorn.error - Waiting for application shutdown.
 2023-11-13 14:04:11,396 - INFO - uvicorn.error - Application shutdown complete.
 2023-11-13 14:04:11,397 - INFO - uvicorn.error - Finished server process [290]
+2023-11-13 14:04:13,655 - INFO - app.main - ---Starting App---
+2023-11-13 14:04:13,709 - INFO - uvicorn.error - Started server process [292]
+2023-11-13 14:04:13,710 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 14:04:13,712 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 14:04:17,934 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 14:04:17,935 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 14:04:17,953 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 14:04:17,954 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 14:04:17,976 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 14:04:17,977 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 14:04:17,991 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:04:17,998 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:04:18,001 - INFO - sqlalchemy.engine.Engine - [generated in 0.00307s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:04:18,029 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+WHERE dd_system.id = ?
+2023-11-13 14:04:18,031 - INFO - sqlalchemy.engine.Engine - [generated in 0.00174s] (2,)
+2023-11-13 14:04:18,051 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+WHERE dd_system.id = ?
+2023-11-13 14:04:18,051 - INFO - sqlalchemy.engine.Engine - [cached since 0.0221s ago] (2,)
+2023-11-13 14:04:18,065 - INFO - sqlalchemy.engine.Engine - DELETE FROM dd_system WHERE dd_system.id = ?
+2023-11-13 14:04:18,066 - INFO - sqlalchemy.engine.Engine - [generated in 0.00123s] (2,)
+2023-11-13 14:04:18,082 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 14:04:29,684 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:04:29,686 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:04:29,687 - INFO - sqlalchemy.engine.Engine - [cached since 11.69s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:04:29,707 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:04:29,710 - INFO - sqlalchemy.engine.Engine - [generated in 0.00345s] (100, 0)
+2023-11-13 14:04:29,730 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:10:28,608 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:10:28,664 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:10:28,667 - INFO - sqlalchemy.engine.Engine - [cached since 370.7s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:10:28,745 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:10:28,750 - INFO - sqlalchemy.engine.Engine - [cached since 359s ago] (100, 0)
+2023-11-13 14:10:28,809 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:10:30,047 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:10:30,052 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:10:30,055 - INFO - sqlalchemy.engine.Engine - [cached since 372.1s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:10:30,072 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:10:30,076 - INFO - sqlalchemy.engine.Engine - [cached since 360.4s ago] (2, 0)
+2023-11-13 14:10:30,108 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:10:32,455 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:10:32,458 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:10:32,459 - INFO - sqlalchemy.engine.Engine - [cached since 374.5s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:10:32,476 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:10:32,481 - INFO - sqlalchemy.engine.Engine - [cached since 362.8s ago] (5, 0)
+2023-11-13 14:10:32,510 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:10:40,351 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:10:40,356 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:10:40,361 - INFO - sqlalchemy.engine.Engine - [cached since 382.4s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:10:40,387 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:10:40,391 - INFO - sqlalchemy.engine.Engine - [cached since 370.7s ago] (6, 0)
+2023-11-13 14:10:40,412 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:10:44,260 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:10:44,261 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:10:44,262 - INFO - sqlalchemy.engine.Engine - [cached since 386.3s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:10:44,279 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:10:44,281 - INFO - sqlalchemy.engine.Engine - [cached since 374.6s ago] (100, 0)
+2023-11-13 14:10:44,296 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 14:14:16,083 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 14:14:16,101 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 14:14:16,103 - INFO - sqlalchemy.engine.Engine - [cached since 598.1s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 14:14:16,137 - INFO - sqlalchemy.engine.Engine - SELECT dd_system.id, dd_system."SystemName", dd_system."SystemPrefix", dd_system."Description", dd_system."CustomerID", dd_system.data_entry_order, dd_system.created_at, dd_system.updated_at 
+FROM dd_system 
+ LIMIT ? OFFSET ?
+2023-11-13 14:14:16,139 - INFO - sqlalchemy.engine.Engine - [cached since 586.4s ago] (100, 0)
+2023-11-13 14:14:16,172 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:01:24,755 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:01:24,929 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:01:24,968 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:01:24,974 - INFO - uvicorn.error - Finished server process [292]
+2023-11-13 17:01:30,738 - INFO - app.main - ---Starting App---
+2023-11-13 17:01:30,842 - INFO - uvicorn.error - Started server process [305]
+2023-11-13 17:01:30,846 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:01:30,854 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:02:39,707 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:02:39,810 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:02:39,812 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:02:39,813 - INFO - uvicorn.error - Finished server process [305]
+2023-11-13 17:02:42,228 - INFO - app.main - ---Starting App---
+2023-11-13 17:02:42,307 - INFO - uvicorn.error - Started server process [307]
+2023-11-13 17:02:42,309 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:02:42,312 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:03:24,707 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:03:24,812 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:03:24,814 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:03:24,815 - INFO - uvicorn.error - Finished server process [307]
+2023-11-13 17:03:26,950 - INFO - app.main - ---Starting App---
+2023-11-13 17:03:27,032 - INFO - uvicorn.error - Started server process [309]
+2023-11-13 17:03:27,034 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:03:27,037 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:03:50,455 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:03:50,557 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:03:50,559 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:03:50,560 - INFO - uvicorn.error - Finished server process [309]
+2023-11-13 17:03:52,772 - INFO - app.main - ---Starting App---
+2023-11-13 17:03:52,817 - INFO - uvicorn.error - Started server process [318]
+2023-11-13 17:03:52,820 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:03:52,822 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:09:40,057 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:09:40,257 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:09:40,270 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:09:40,274 - INFO - uvicorn.error - Finished server process [318]
+2023-11-13 17:09:46,233 - INFO - app.main - ---Starting App---
+2023-11-13 17:09:46,312 - INFO - uvicorn.error - Started server process [320]
+2023-11-13 17:09:46,315 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:09:46,320 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:09:56,295 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:09:56,396 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:09:56,398 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:09:56,399 - INFO - uvicorn.error - Finished server process [320]
+2023-11-13 17:10:37,640 - INFO - app.main - ---Starting App---
+2023-11-13 17:10:37,718 - INFO - uvicorn.error - Started server process [324]
+2023-11-13 17:10:37,719 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:10:37,720 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:11:35,642 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:11:35,784 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:11:35,790 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:11:35,792 - INFO - uvicorn.error - Finished server process [324]
+2023-11-13 17:11:41,519 - INFO - app.main - ---Starting App---
+2023-11-13 17:11:41,625 - INFO - uvicorn.error - Started server process [326]
+2023-11-13 17:11:41,627 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:11:41,631 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:11:51,374 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:11:51,476 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:11:51,477 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:11:51,480 - INFO - uvicorn.error - Finished server process [326]
+2023-11-13 17:11:54,435 - INFO - app.main - ---Starting App---
+2023-11-13 17:11:54,508 - INFO - uvicorn.error - Started server process [328]
+2023-11-13 17:11:54,509 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:11:54,510 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:12:34,904 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:12:35,132 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:12:35,151 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:12:35,158 - INFO - uvicorn.error - Finished server process [328]
+2023-11-13 17:12:39,503 - INFO - app.main - ---Starting App---
+2023-11-13 17:12:39,565 - INFO - uvicorn.error - Started server process [330]
+2023-11-13 17:12:39,567 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:12:39,568 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:12:49,718 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:12:49,820 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:12:49,821 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:12:49,822 - INFO - uvicorn.error - Finished server process [330]
+2023-11-13 17:14:27,169 - INFO - app.main - ---Starting App---
+2023-11-13 17:14:27,284 - INFO - uvicorn.error - Started server process [334]
+2023-11-13 17:14:27,290 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:14:27,295 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:14:36,839 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:14:36,942 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:14:36,944 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:14:36,945 - INFO - uvicorn.error - Finished server process [334]
+2023-11-13 17:14:39,433 - INFO - app.main - ---Starting App---
+2023-11-13 17:14:39,494 - INFO - uvicorn.error - Started server process [336]
+2023-11-13 17:14:39,495 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:14:39,497 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:14:49,639 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:14:49,741 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:14:49,742 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:14:49,744 - INFO - uvicorn.error - Finished server process [336]
+2023-11-13 17:14:51,814 - INFO - app.main - ---Starting App---
+2023-11-13 17:14:51,966 - INFO - uvicorn.error - Started server process [338]
+2023-11-13 17:14:51,968 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:14:51,971 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:15:26,328 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:15:26,431 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:15:26,433 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:15:26,434 - INFO - uvicorn.error - Finished server process [338]
+2023-11-13 17:15:28,867 - INFO - app.main - ---Starting App---
+2023-11-13 17:15:28,920 - INFO - uvicorn.error - Started server process [340]
+2023-11-13 17:15:28,921 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:15:28,922 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:16:14,315 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:16:14,418 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:16:14,420 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:16:14,420 - INFO - uvicorn.error - Finished server process [340]
+2023-11-13 17:16:16,647 - INFO - app.main - ---Starting App---
+2023-11-13 17:16:16,709 - INFO - uvicorn.error - Started server process [342]
+2023-11-13 17:16:16,711 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:16:16,713 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:16:27,152 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:16:27,254 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:16:27,256 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:16:27,257 - INFO - uvicorn.error - Finished server process [342]
+2023-11-13 17:16:29,598 - INFO - app.main - ---Starting App---
+2023-11-13 17:16:29,653 - INFO - uvicorn.error - Started server process [344]
+2023-11-13 17:16:29,656 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:16:29,661 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:16:52,246 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:16:52,348 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:16:52,349 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:16:52,350 - INFO - uvicorn.error - Finished server process [344]
+2023-11-13 17:16:54,472 - INFO - app.main - ---Starting App---
+2023-11-13 17:16:54,606 - INFO - uvicorn.error - Started server process [346]
+2023-11-13 17:16:54,607 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:16:54,609 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:18:03,199 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:18:03,301 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:18:03,302 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:18:03,303 - INFO - uvicorn.error - Finished server process [346]
+2023-11-13 17:18:05,369 - INFO - app.main - ---Starting App---
+2023-11-13 17:18:05,409 - INFO - uvicorn.error - Started server process [348]
+2023-11-13 17:18:05,409 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:18:05,411 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:18:26,899 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:18:27,001 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:18:27,002 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:18:27,003 - INFO - uvicorn.error - Finished server process [348]
+2023-11-13 17:18:29,005 - INFO - app.main - ---Starting App---
+2023-11-13 17:18:29,062 - INFO - uvicorn.error - Started server process [350]
+2023-11-13 17:18:29,063 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:18:29,068 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:18:39,202 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:18:39,305 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:18:39,306 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:18:39,307 - INFO - uvicorn.error - Finished server process [350]
+2023-11-13 17:18:41,524 - INFO - app.main - ---Starting App---
+2023-11-13 17:18:41,582 - INFO - uvicorn.error - Started server process [352]
+2023-11-13 17:18:41,584 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:18:41,585 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:19:16,522 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:19:16,626 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:19:16,628 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:19:16,629 - INFO - uvicorn.error - Finished server process [352]
+2023-11-13 17:19:18,896 - INFO - app.main - ---Starting App---
+2023-11-13 17:19:18,972 - INFO - uvicorn.error - Started server process [354]
+2023-11-13 17:19:18,973 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:19:18,974 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:19:23,950 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:19:23,966 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:19:23,987 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:19:23,989 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:19:24,010 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:19:24,014 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:19:24,030 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:19:24,034 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-13 17:19:24,036 - INFO - sqlalchemy.engine.Engine - [generated in 0.00103s] ('marcos.800nascimento@gmail.com',)
+2023-11-13 17:19:24,444 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:19:43,913 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:19:43,916 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-13 17:19:43,918 - INFO - sqlalchemy.engine.Engine - [cached since 19.89s ago] ('marcos.800nascimento@gmail.com',)
+2023-11-13 17:19:44,220 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:19:48,301 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:19:48,306 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:19:48,307 - INFO - sqlalchemy.engine.Engine - [generated in 0.00113s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:19:48,337 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+ LIMIT ? OFFSET ?
+2023-11-13 17:19:48,344 - INFO - sqlalchemy.engine.Engine - [generated in 0.00742s] (100, 0)
+2023-11-13 17:19:48,391 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:19:54,093 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:19:54,096 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:19:54,097 - INFO - sqlalchemy.engine.Engine - [cached since 5.791s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:19:54,117 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_entity ("EntityName", "Description", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_entity.id
+2023-11-13 17:19:54,118 - INFO - sqlalchemy.engine.Engine - [generated in 0.00172s] ('string', 'string', 0, datetime.datetime(2023, 11, 13, 17, 19, 54, 116966), datetime.datetime(2023, 11, 13, 17, 19, 54, 116972))
+2023-11-13 17:19:54,150 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:19:54,159 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/entity.py", line 40, in create_entity
+    entity = await repositories.entity.create(db, obj_in=entity_in)
+  File "./app/db/repositories/crud_entity.py", line 19, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "SystemID" is of type integer but expression is of type uuid
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_entity ("EntityName", "Description", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_entity.id]
+[parameters: ('string', 'string', 0, datetime.datetime(2023, 11, 13, 17, 19, 54, 116966), datetime.datetime(2023, 11, 13, 17, 19, 54, 116972))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:20:34,761 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:20:34,877 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:20:34,885 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:20:34,887 - INFO - uvicorn.error - Finished server process [354]
+2023-11-13 17:20:38,855 - INFO - app.main - ---Starting App---
+2023-11-13 17:20:38,927 - INFO - uvicorn.error - Started server process [361]
+2023-11-13 17:20:38,929 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:20:38,930 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:20:39,221 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:20:39,223 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:20:39,241 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:20:39,244 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:20:39,269 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:20:39,271 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:20:39,291 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:20:39,299 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:20:39,303 - INFO - sqlalchemy.engine.Engine - [generated in 0.00382s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:20:39,331 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_entity ("EntityName", "Description", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_entity.id
+2023-11-13 17:20:39,333 - INFO - sqlalchemy.engine.Engine - [generated in 0.00247s] ('string', 'string', 0, datetime.datetime(2023, 11, 13, 17, 20, 39, 330866), datetime.datetime(2023, 11, 13, 17, 20, 39, 330875))
+2023-11-13 17:20:39,382 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:20:39,445 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:20:39,450 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:20:39,452 - INFO - sqlalchemy.engine.Engine - [generated in 0.00174s] (1,)
+2023-11-13 17:20:39,474 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:20:52,135 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:20:52,138 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:20:52,140 - INFO - sqlalchemy.engine.Engine - [cached since 12.84s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:20:52,156 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_entity ("EntityName", "Description", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_entity.id
+2023-11-13 17:20:52,158 - INFO - sqlalchemy.engine.Engine - [cached since 12.83s ago] ('Again', 'Fade out', 1, datetime.datetime(2023, 11, 13, 17, 20, 52, 155944), datetime.datetime(2023, 11, 13, 17, 20, 52, 155956))
+2023-11-13 17:20:52,179 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:20:52,207 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:20:52,210 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:20:52,212 - INFO - sqlalchemy.engine.Engine - [cached since 12.76s ago] (2,)
+2023-11-13 17:20:52,227 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:20:56,721 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:20:56,725 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:20:56,727 - INFO - sqlalchemy.engine.Engine - [cached since 17.43s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:20:56,744 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:20:56,745 - INFO - sqlalchemy.engine.Engine - [generated in 0.00134s] (2,)
+2023-11-13 17:20:56,777 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:21:24,368 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:21:24,370 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:21:24,373 - INFO - sqlalchemy.engine.Engine - [cached since 45.07s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:21:24,385 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:21:24,387 - INFO - sqlalchemy.engine.Engine - [cached since 27.64s ago] (1,)
+2023-11-13 17:21:24,405 - INFO - sqlalchemy.engine.Engine - UPDATE dd_entity SET "EntityName"=?, "Description"=?, "SystemID"=?, updated_at=? WHERE dd_entity.id = ?
+2023-11-13 17:21:24,407 - INFO - sqlalchemy.engine.Engine - [generated in 0.00192s] ('Yes My Dark', 'YMD', 9, datetime.datetime(2023, 11, 13, 17, 21, 24, 405541), 1)
+2023-11-13 17:21:24,424 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:21:24,466 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:21:24,467 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:21:24,468 - INFO - sqlalchemy.engine.Engine - [cached since 45.02s ago] (1,)
+2023-11-13 17:21:24,485 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:21:35,064 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:21:35,067 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:21:35,069 - INFO - sqlalchemy.engine.Engine - [cached since 55.77s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:21:35,086 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_entity ("EntityName", "Description", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_entity.id
+2023-11-13 17:21:35,089 - INFO - sqlalchemy.engine.Engine - [cached since 55.76s ago] ('Again', 'Fade out', 1, datetime.datetime(2023, 11, 13, 17, 21, 35, 86763), datetime.datetime(2023, 11, 13, 17, 21, 35, 86772))
+2023-11-13 17:21:35,103 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:21:35,126 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:21:35,128 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:21:35,130 - INFO - sqlalchemy.engine.Engine - [cached since 55.68s ago] (3,)
+2023-11-13 17:21:35,144 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:21:39,222 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:21:39,226 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:21:39,227 - INFO - sqlalchemy.engine.Engine - [cached since 59.93s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:21:39,248 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:21:39,253 - INFO - sqlalchemy.engine.Engine - [cached since 42.51s ago] (3,)
+2023-11-13 17:21:39,268 - INFO - sqlalchemy.engine.Engine - SELECT dd_entity.id, dd_entity."EntityName", dd_entity."Description", dd_entity."SystemID", dd_entity.created_at, dd_entity.updated_at 
+FROM dd_entity 
+WHERE dd_entity.id = ?
+2023-11-13 17:21:39,270 - INFO - sqlalchemy.engine.Engine - [cached since 42.53s ago] (3,)
+2023-11-13 17:21:39,293 - INFO - sqlalchemy.engine.Engine - DELETE FROM dd_entity WHERE dd_entity.id = ?
+2023-11-13 17:21:39,299 - INFO - sqlalchemy.engine.Engine - [generated in 0.00658s] (3,)
+2023-11-13 17:21:39,320 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:23:30,273 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:23:30,428 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:23:30,452 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:23:30,457 - INFO - uvicorn.error - Finished server process [361]
+2023-11-13 17:23:34,706 - INFO - app.main - ---Starting App---
+2023-11-13 17:23:34,786 - INFO - uvicorn.error - Started server process [375]
+2023-11-13 17:23:34,788 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:23:34,790 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:23:43,535 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:23:43,638 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:23:43,639 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:23:43,640 - INFO - uvicorn.error - Finished server process [375]
+2023-11-13 17:23:45,894 - INFO - app.main - ---Starting App---
+2023-11-13 17:23:45,948 - INFO - uvicorn.error - Started server process [377]
+2023-11-13 17:23:45,952 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:23:45,953 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:24:30,919 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:24:31,023 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:24:31,025 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:24:31,027 - INFO - uvicorn.error - Finished server process [377]
+2023-11-13 17:24:33,359 - INFO - app.main - ---Starting App---
+2023-11-13 17:24:33,431 - INFO - uvicorn.error - Started server process [379]
+2023-11-13 17:24:33,433 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:24:33,435 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:24:43,476 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:24:43,578 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:24:43,580 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:24:43,581 - INFO - uvicorn.error - Finished server process [379]
+2023-11-13 17:24:45,906 - INFO - app.main - ---Starting App---
+2023-11-13 17:24:45,992 - INFO - uvicorn.error - Started server process [381]
+2023-11-13 17:24:45,994 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:24:45,997 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:25:52,759 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:25:52,861 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:25:52,862 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:25:52,863 - INFO - uvicorn.error - Finished server process [381]
+2023-11-13 17:25:55,199 - INFO - app.main - ---Starting App---
+2023-11-13 17:25:55,295 - INFO - uvicorn.error - Started server process [383]
+2023-11-13 17:25:55,297 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:25:55,300 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:27:44,398 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:27:44,500 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:27:44,501 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:27:44,502 - INFO - uvicorn.error - Finished server process [383]
+2023-11-13 17:27:46,733 - INFO - app.main - ---Starting App---
+2023-11-13 17:27:46,810 - INFO - uvicorn.error - Started server process [392]
+2023-11-13 17:27:46,811 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:27:46,812 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:29:06,624 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:29:06,725 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:29:06,726 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:29:06,727 - INFO - uvicorn.error - Finished server process [392]
+2023-11-13 17:29:08,915 - INFO - app.main - ---Starting App---
+2023-11-13 17:29:09,000 - INFO - uvicorn.error - Started server process [394]
+2023-11-13 17:29:09,001 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:29:09,002 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:30:15,943 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:30:16,044 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:30:16,046 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:30:16,047 - INFO - uvicorn.error - Finished server process [394]
+2023-11-13 17:30:18,093 - INFO - app.main - ---Starting App---
+2023-11-13 17:30:18,146 - INFO - uvicorn.error - Started server process [396]
+2023-11-13 17:30:18,147 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:30:18,148 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:34:18,259 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:34:18,379 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:34:18,389 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:34:18,392 - INFO - uvicorn.error - Finished server process [396]
+2023-11-13 17:49:32,737 - INFO - app.main - ---Starting App---
+2023-11-13 17:49:32,879 - INFO - uvicorn.error - Started server process [452]
+2023-11-13 17:49:32,881 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:49:32,885 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:52:04,011 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:52:04,021 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:52:04,060 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:52:04,064 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:52:04,093 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:52:04,094 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:52:04,122 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:52:04,173 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-13 17:52:04,176 - INFO - sqlalchemy.engine.Engine - [generated in 0.00400s] ('marcos.800nascimento@gmail.com',)
+2023-11-13 17:52:04,632 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:52:10,273 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:52:10,277 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:52:10,278 - INFO - sqlalchemy.engine.Engine - [generated in 0.00135s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:52:10,320 - INFO - sqlalchemy.engine.Engine - SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?
+2023-11-13 17:52:10,324 - INFO - sqlalchemy.engine.Engine - [generated in 0.00429s] (100, 0)
+2023-11-13 17:52:10,394 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:52:10,400 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/attribute.py", line 26, in read_attributes
+    attributes = await repositories.attribute.get_multi(db, skip=skip, limit=limit)
+  File "./app/db/repositories/base.py", line 34, in get_multi
+    result = await db.execute(stmt)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 135, in execute
+    return await greenlet_spawn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 91, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1530, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "entity" does not exist
+[SQL: SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?]
+[parameters: (100, 0)]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:54:23,466 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:54:23,609 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:54:23,627 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:54:23,633 - INFO - uvicorn.error - Finished server process [452]
+2023-11-13 17:54:41,765 - INFO - app.main - ---Starting App---
+2023-11-13 17:54:41,863 - INFO - uvicorn.error - Started server process [461]
+2023-11-13 17:54:41,865 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:54:41,867 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:55:24,190 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:55:24,197 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:55:24,275 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:55:24,286 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:55:24,442 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:55:24,454 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:55:24,502 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:55:24,511 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:55:24,513 - INFO - sqlalchemy.engine.Engine - [generated in 0.00222s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:55:24,618 - INFO - sqlalchemy.engine.Engine - SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?
+2023-11-13 17:55:24,624 - INFO - sqlalchemy.engine.Engine - [generated in 0.00629s] (100, 0)
+2023-11-13 17:55:24,642 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:55:24,648 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/attribute.py", line 26, in read_attributes
+    attributes = await repositories.attribute.get_multi(db, skip=skip, limit=limit)
+  File "./app/db/repositories/base.py", line 34, in get_multi
+    result = await db.execute(stmt)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 135, in execute
+    return await greenlet_spawn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 91, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1530, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "entity" does not exist
+[SQL: SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?]
+[parameters: (100, 0)]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:55:46,401 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:55:46,404 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-13 17:55:46,405 - INFO - sqlalchemy.engine.Engine - [generated in 0.00105s] ('marcos.800nascimento@gmail.com',)
+2023-11-13 17:55:46,854 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:55:51,034 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:55:51,036 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:55:51,037 - INFO - sqlalchemy.engine.Engine - [cached since 26.53s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:55:51,055 - INFO - sqlalchemy.engine.Engine - SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?
+2023-11-13 17:55:51,061 - INFO - sqlalchemy.engine.Engine - [cached since 26.44s ago] (100, 0)
+2023-11-13 17:55:51,078 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:55:51,085 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/attribute.py", line 26, in read_attributes
+    attributes = await repositories.attribute.get_multi(db, skip=skip, limit=limit)
+  File "./app/db/repositories/base.py", line 34, in get_multi
+    result = await db.execute(stmt)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 135, in execute
+    return await greenlet_spawn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 91, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1530, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "entity" does not exist
+[SQL: SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?]
+[parameters: (100, 0)]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:56:02,539 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:56:02,542 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:56:02,543 - INFO - sqlalchemy.engine.Engine - [cached since 38.03s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:56:02,561 - INFO - sqlalchemy.engine.Engine - SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?
+2023-11-13 17:56:02,562 - INFO - sqlalchemy.engine.Engine - [cached since 37.95s ago] (100, 0)
+2023-11-13 17:56:02,573 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:56:02,579 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/attribute.py", line 26, in read_attributes
+    attributes = await repositories.attribute.get_multi(db, skip=skip, limit=limit)
+  File "./app/db/repositories/base.py", line 34, in get_multi
+    result = await db.execute(stmt)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 135, in execute
+    return await greenlet_spawn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 91, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1530, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "entity" does not exist
+[SQL: SELECT entity.id, entity."EntityID", entity."AttributeName", entity."DataType", entity.size, entity.label, entity.tooltip, entity.help, entity."IsRequired", entity."DefaultValue", entity."ValidationRules", entity."IsIndexed", entity."IsUnique", entity."MinimumValue", entity."MaximumValue", entity."ForeignKeyEntity", entity."IsHidden", entity.created_at, entity.updated_at 
+FROM entity 
+ LIMIT ? OFFSET ?]
+[parameters: (100, 0)]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:56:31,740 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:56:31,845 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:56:31,849 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:56:31,854 - INFO - uvicorn.error - Finished server process [461]
+2023-11-13 17:56:35,556 - INFO - app.main - ---Starting App---
+2023-11-13 17:56:35,671 - INFO - uvicorn.error - Started server process [468]
+2023-11-13 17:56:35,673 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:56:35,676 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:56:47,531 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:56:47,633 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:56:47,635 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:56:47,636 - INFO - uvicorn.error - Finished server process [468]
+2023-11-13 17:56:50,597 - INFO - app.main - ---Starting App---
+2023-11-13 17:56:50,807 - INFO - uvicorn.error - Started server process [470]
+2023-11-13 17:56:50,809 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:56:50,811 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:57:03,501 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:57:03,503 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:03,526 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:57:03,529 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:03,563 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:57:03,565 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:03,585 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:57:03,589 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-13 17:57:03,593 - INFO - sqlalchemy.engine.Engine - [generated in 0.00345s] ('marcos.800nascimento@gmail.com',)
+2023-11-13 17:57:03,955 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:57:09,554 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:57:09,558 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:57:09,560 - INFO - sqlalchemy.engine.Engine - [generated in 0.00223s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:57:09,582 - INFO - sqlalchemy.engine.Engine - SELECT attribute.id, attribute."EntityID", attribute."AttributeName", attribute."DataType", attribute.size, attribute.label, attribute.tooltip, attribute.help, attribute."IsRequired", attribute."DefaultValue", attribute."ValidationRules", attribute."IsIndexed", attribute."IsUnique", attribute."MinimumValue", attribute."MaximumValue", attribute."ForeignKeyEntity", attribute."IsHidden", attribute.created_at, attribute.updated_at 
+FROM attribute 
+ LIMIT ? OFFSET ?
+2023-11-13 17:57:09,583 - INFO - sqlalchemy.engine.Engine - [generated in 0.00114s] (100, 0)
+2023-11-13 17:57:09,603 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:57:09,610 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/attribute.py", line 26, in read_attributes
+    attributes = await repositories.attribute.get_multi(db, skip=skip, limit=limit)
+  File "./app/db/repositories/base.py", line 34, in get_multi
+    result = await db.execute(stmt)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 135, in execute
+    return await greenlet_spawn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 91, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1530, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "attribute" does not exist
+[SQL: SELECT attribute.id, attribute."EntityID", attribute."AttributeName", attribute."DataType", attribute.size, attribute.label, attribute.tooltip, attribute.help, attribute."IsRequired", attribute."DefaultValue", attribute."ValidationRules", attribute."IsIndexed", attribute."IsUnique", attribute."MinimumValue", attribute."MaximumValue", attribute."ForeignKeyEntity", attribute."IsHidden", attribute.created_at, attribute.updated_at 
+FROM attribute 
+ LIMIT ? OFFSET ?]
+[parameters: (100, 0)]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-13 17:57:43,044 - INFO - uvicorn.error - Shutting down
+2023-11-13 17:57:43,146 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 17:57:43,147 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 17:57:43,149 - INFO - uvicorn.error - Finished server process [470]
+2023-11-13 17:57:46,993 - INFO - app.main - ---Starting App---
+2023-11-13 17:57:47,128 - INFO - uvicorn.error - Started server process [477]
+2023-11-13 17:57:47,130 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 17:57:47,132 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 17:57:47,424 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-13 17:57:47,425 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:47,445 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-13 17:57:47,447 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:47,474 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-13 17:57:47,476 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-13 17:57:47,494 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:57:47,508 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:57:47,510 - INFO - sqlalchemy.engine.Engine - [generated in 0.00248s] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:57:47,565 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+ LIMIT ? OFFSET ?
+2023-11-13 17:57:47,568 - INFO - sqlalchemy.engine.Engine - [generated in 0.00357s] (100, 0)
+2023-11-13 17:57:48,625 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:57:57,137 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:57:57,138 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:57:57,140 - INFO - sqlalchemy.engine.Engine - [cached since 9.633s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:57:57,164 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_attribute ("EntityID", "AttributeName", "DataType", size, label, tooltip, help, "IsRequired", "DefaultValue", "ValidationRules", "IsIndexed", "IsUnique", "MinimumValue", "MaximumValue", "ForeignKeyEntity", "IsHidden", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_attribute.id
+2023-11-13 17:57:57,165 - INFO - sqlalchemy.engine.Engine - [generated in 0.00199s] (0, 'string', 'Integer', Decimal('0'), 'string', 'string', 'string', True, 'string', 'string', True, True, Decimal('0'), Decimal('0'), 0, True, datetime.datetime(2023, 11, 13, 17, 57, 57, 163678), datetime.datetime(2023, 11, 13, 17, 57, 57, 163686))
+2023-11-13 17:57:57,200 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 17:57:57,252 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:57:57,257 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 17:57:57,262 - INFO - sqlalchemy.engine.Engine - [generated in 0.00502s] (2,)
+2023-11-13 17:57:57,279 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:58:08,550 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:58:08,555 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:58:08,557 - INFO - sqlalchemy.engine.Engine - [cached since 21.05s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:58:08,582 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:58:38,412 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:58:38,414 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:58:38,415 - INFO - sqlalchemy.engine.Engine - [cached since 50.91s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:58:38,439 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 17:58:38,449 - INFO - sqlalchemy.engine.Engine - [generated in 0.01026s] (1,)
+2023-11-13 17:58:38,471 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 17:59:01,521 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 17:59:01,528 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 17:59:01,529 - INFO - sqlalchemy.engine.Engine - [cached since 74.02s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 17:59:01,546 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 17:59:01,550 - INFO - sqlalchemy.engine.Engine - [cached since 23.11s ago] (2,)
+2023-11-13 17:59:01,567 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 18:00:01,211 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:01,216 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 18:00:01,222 - INFO - sqlalchemy.engine.Engine - [cached since 133.7s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 18:00:01,256 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 18:00:01,257 - INFO - sqlalchemy.engine.Engine - [cached since 82.82s ago] (2,)
+2023-11-13 18:00:01,771 - INFO - sqlalchemy.engine.Engine - UPDATE dd_attribute SET "EntityID"=?, "AttributeName"=?, "DataType"=?, size=?, label=?, tooltip=?, help=?, "IsRequired"=?, "DefaultValue"=?, "ValidationRules"=?, "MaximumValue"=?, "ForeignKeyEntity"=?, "IsHidden"=?, updated_at=? WHERE dd_attribute.id = ?
+2023-11-13 18:00:01,776 - INFO - sqlalchemy.engine.Engine - [generated in 0.01464s] (1, 'Oooh', 'Float', Decimal('7'), 'Não temos label', 'Não há nada', 'Socorro', False, 'Gamer', 'Não tem', Decimal('51'), 1, False, datetime.datetime(2023, 11, 13, 18, 0, 1, 764498), 2)
+2023-11-13 18:00:01,842 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 18:00:01,944 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:01,950 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 18:00:01,956 - INFO - sqlalchemy.engine.Engine - [cached since 124.7s ago] (2,)
+2023-11-13 18:00:01,997 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 18:00:08,831 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:08,836 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 18:00:08,839 - INFO - sqlalchemy.engine.Engine - [cached since 141.3s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 18:00:08,864 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 18:00:15,216 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:15,219 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 18:00:15,221 - INFO - sqlalchemy.engine.Engine - [cached since 147.7s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 18:00:15,244 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 18:00:19,718 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:19,721 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 18:00:19,722 - INFO - sqlalchemy.engine.Engine - [cached since 152.2s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 18:00:19,742 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_attribute ("EntityID", "AttributeName", "DataType", size, label, tooltip, help, "IsRequired", "DefaultValue", "ValidationRules", "IsIndexed", "IsUnique", "MinimumValue", "MaximumValue", "ForeignKeyEntity", "IsHidden", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_attribute.id
+2023-11-13 18:00:19,743 - INFO - sqlalchemy.engine.Engine - [cached since 142.6s ago] (0, 'string', 'String', Decimal('0'), 'string', 'string', 'string', True, 'string', 'string', True, True, Decimal('0'), Decimal('0'), 0, True, datetime.datetime(2023, 11, 13, 18, 0, 19, 741619), datetime.datetime(2023, 11, 13, 18, 0, 19, 741640))
+2023-11-13 18:00:19,768 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 18:00:19,792 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:19,795 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 18:00:19,796 - INFO - sqlalchemy.engine.Engine - [cached since 142.5s ago] (3,)
+2023-11-13 18:00:19,814 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-13 18:00:27,495 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-13 18:00:27,498 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-13 18:00:27,500 - INFO - sqlalchemy.engine.Engine - [cached since 160s ago] ('a78acec1-e0ce-4053-85b3-ab776a2b174c',)
+2023-11-13 18:00:27,517 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 18:00:27,518 - INFO - sqlalchemy.engine.Engine - [cached since 109.1s ago] (3,)
+2023-11-13 18:00:27,536 - INFO - sqlalchemy.engine.Engine - SELECT dd_attribute.id, dd_attribute."EntityID", dd_attribute."AttributeName", dd_attribute."DataType", dd_attribute.size, dd_attribute.label, dd_attribute.tooltip, dd_attribute.help, dd_attribute."IsRequired", dd_attribute."DefaultValue", dd_attribute."ValidationRules", dd_attribute."IsIndexed", dd_attribute."IsUnique", dd_attribute."MinimumValue", dd_attribute."MaximumValue", dd_attribute."ForeignKeyEntity", dd_attribute."IsHidden", dd_attribute.created_at, dd_attribute.updated_at 
+FROM dd_attribute 
+WHERE dd_attribute.id = ?
+2023-11-13 18:00:27,537 - INFO - sqlalchemy.engine.Engine - [cached since 109.1s ago] (3,)
+2023-11-13 18:00:27,556 - INFO - sqlalchemy.engine.Engine - DELETE FROM dd_attribute WHERE dd_attribute.id = ?
+2023-11-13 18:00:27,558 - INFO - sqlalchemy.engine.Engine - [generated in 0.00191s] (3,)
+2023-11-13 18:00:27,570 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-13 18:02:57,450 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:02:57,594 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:02:57,612 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:02:57,617 - INFO - uvicorn.error - Finished server process [477]
+2023-11-13 18:03:03,651 - INFO - app.main - ---Starting App---
+2023-11-13 18:03:03,797 - INFO - uvicorn.error - Started server process [483]
+2023-11-13 18:03:03,798 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:03:03,800 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:03:27,029 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:03:27,131 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:03:27,132 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:03:27,134 - INFO - uvicorn.error - Finished server process [483]
+2023-11-13 18:03:29,589 - INFO - app.main - ---Starting App---
+2023-11-13 18:03:29,710 - INFO - uvicorn.error - Started server process [485]
+2023-11-13 18:03:29,711 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:03:29,712 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:04:07,101 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:04:07,208 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:04:07,211 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:04:07,213 - INFO - uvicorn.error - Finished server process [485]
+2023-11-13 18:04:10,307 - INFO - app.main - ---Starting App---
+2023-11-13 18:04:10,419 - INFO - uvicorn.error - Started server process [487]
+2023-11-13 18:04:10,420 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:04:10,424 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:04:21,266 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:04:21,367 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:04:21,369 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:04:21,370 - INFO - uvicorn.error - Finished server process [487]
+2023-11-13 18:04:25,300 - INFO - app.main - ---Starting App---
+2023-11-13 18:04:25,404 - INFO - uvicorn.error - Started server process [489]
+2023-11-13 18:04:25,405 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:04:25,408 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:05:12,930 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:05:13,033 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:05:13,037 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:05:13,040 - INFO - uvicorn.error - Finished server process [489]
+2023-11-13 18:05:15,998 - INFO - app.main - ---Starting App---
+2023-11-13 18:05:16,117 - INFO - uvicorn.error - Started server process [491]
+2023-11-13 18:05:16,118 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:05:16,120 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:05:50,656 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:05:50,760 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:05:50,763 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:05:50,764 - INFO - uvicorn.error - Finished server process [491]
+2023-11-13 18:05:55,253 - INFO - app.main - ---Starting App---
+2023-11-13 18:05:55,368 - INFO - uvicorn.error - Started server process [493]
+2023-11-13 18:05:55,370 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:05:55,371 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:19:28,980 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:19:29,170 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:19:29,205 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:19:29,212 - INFO - uvicorn.error - Finished server process [493]
+2023-11-13 18:19:35,845 - INFO - app.main - ---Starting App---
+2023-11-13 18:19:35,988 - INFO - uvicorn.error - Started server process [495]
+2023-11-13 18:19:35,990 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:19:35,994 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:19:55,036 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:19:55,137 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:19:55,138 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:19:55,139 - INFO - uvicorn.error - Finished server process [495]
+2023-11-13 18:19:57,841 - INFO - app.main - ---Starting App---
+2023-11-13 18:19:57,963 - INFO - uvicorn.error - Started server process [497]
+2023-11-13 18:19:57,968 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:19:57,970 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:20:31,878 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:20:31,980 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:20:31,981 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:20:31,983 - INFO - uvicorn.error - Finished server process [497]
+2023-11-13 18:20:35,178 - INFO - app.main - ---Starting App---
+2023-11-13 18:20:35,288 - INFO - uvicorn.error - Started server process [499]
+2023-11-13 18:20:35,290 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:20:35,292 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:25:29,789 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:25:29,931 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:25:29,970 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:25:29,980 - INFO - uvicorn.error - Finished server process [499]
+2023-11-13 18:25:34,691 - INFO - app.main - ---Starting App---
+2023-11-13 18:25:34,780 - INFO - uvicorn.error - Started server process [508]
+2023-11-13 18:25:34,783 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:25:34,789 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:25:57,655 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:25:57,767 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:25:57,769 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:25:57,770 - INFO - uvicorn.error - Finished server process [508]
+2023-11-13 18:26:00,102 - INFO - app.main - ---Starting App---
+2023-11-13 18:26:00,199 - INFO - uvicorn.error - Started server process [517]
+2023-11-13 18:26:00,202 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:26:00,205 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:26:21,713 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:26:21,815 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:26:21,816 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:26:21,817 - INFO - uvicorn.error - Finished server process [517]
+2023-11-13 18:26:24,586 - INFO - app.main - ---Starting App---
+2023-11-13 18:26:24,789 - INFO - uvicorn.error - Started server process [526]
+2023-11-13 18:26:24,791 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:26:24,794 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:27:46,343 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:27:46,477 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:27:46,493 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:27:46,497 - INFO - uvicorn.error - Finished server process [526]
+2023-11-13 18:27:50,682 - INFO - app.main - ---Starting App---
+2023-11-13 18:27:50,821 - INFO - uvicorn.error - Started server process [558]
+2023-11-13 18:27:50,823 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:27:50,825 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:28:12,023 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:28:12,126 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:28:12,127 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:28:12,129 - INFO - uvicorn.error - Finished server process [558]
+2023-11-13 18:28:14,621 - INFO - app.main - ---Starting App---
+2023-11-13 18:28:14,749 - INFO - uvicorn.error - Started server process [560]
+2023-11-13 18:28:14,751 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:28:14,753 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:28:26,379 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:28:26,481 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:28:26,482 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:28:26,484 - INFO - uvicorn.error - Finished server process [560]
+2023-11-13 18:28:29,688 - INFO - app.main - ---Starting App---
+2023-11-13 18:28:29,807 - INFO - uvicorn.error - Started server process [562]
+2023-11-13 18:28:29,808 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:28:29,810 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:30:16,604 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:30:16,751 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:30:16,769 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:30:16,773 - INFO - uvicorn.error - Finished server process [562]
+2023-11-13 18:30:20,605 - INFO - app.main - ---Starting App---
+2023-11-13 18:30:20,738 - INFO - uvicorn.error - Started server process [607]
+2023-11-13 18:30:20,740 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:30:20,742 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:31:07,170 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:31:07,272 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:31:07,274 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:31:07,275 - INFO - uvicorn.error - Finished server process [607]
+2023-11-13 18:31:09,617 - INFO - app.main - ---Starting App---
+2023-11-13 18:31:09,721 - INFO - uvicorn.error - Started server process [624]
+2023-11-13 18:31:09,723 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:31:09,725 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:32:08,802 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:32:08,915 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:32:08,922 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:32:08,924 - INFO - uvicorn.error - Finished server process [624]
+2023-11-13 18:32:11,870 - INFO - app.main - ---Starting App---
+2023-11-13 18:32:11,993 - INFO - uvicorn.error - Started server process [633]
+2023-11-13 18:32:11,994 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:32:11,995 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:42:50,545 - INFO - uvicorn.error - Shutting down
+2023-11-13 18:42:50,710 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 18:42:50,745 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 18:42:50,752 - INFO - uvicorn.error - Finished server process [633]
+2023-11-13 18:42:56,340 - INFO - app.main - ---Starting App---
+2023-11-13 18:42:56,584 - INFO - uvicorn.error - Started server process [635]
+2023-11-13 18:42:56,586 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:42:56,588 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 18:44:50,932 - INFO - app.main - ---Starting App---
+2023-11-13 18:44:51,179 - INFO - uvicorn.error - Started server process [9]
+2023-11-13 18:44:51,181 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 18:44:51,185 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 19:18:41,856 - INFO - uvicorn.error - Shutting down
+2023-11-13 19:18:42,020 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 19:18:42,062 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 19:18:42,065 - INFO - uvicorn.error - Finished server process [9]
+2023-11-13 19:18:46,900 - INFO - app.main - ---Starting App---
+2023-11-13 19:18:46,994 - INFO - uvicorn.error - Started server process [32]
+2023-11-13 19:18:46,995 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-13 19:18:46,997 - INFO - uvicorn.error - Application startup complete.
+2023-11-13 19:41:04,604 - INFO - uvicorn.error - Shutting down
+2023-11-13 19:41:04,750 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-13 19:41:04,780 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-13 19:41:04,784 - INFO - uvicorn.error - Finished server process [32]
