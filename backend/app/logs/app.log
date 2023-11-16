@@ -44901,3 +44901,83 @@ WHERE dd_businessrule.id = ?
 2023-11-16 12:07:43,252 - INFO - uvicorn.error - Waiting for application shutdown.
 2023-11-16 12:07:43,256 - INFO - uvicorn.error - Application shutdown complete.
 2023-11-16 12:07:43,257 - INFO - uvicorn.error - Finished server process [80]
+2023-11-16 12:07:47,230 - INFO - app.main - ---Starting App---
+2023-11-16 12:07:47,318 - INFO - uvicorn.error - Started server process [87]
+2023-11-16 12:07:47,319 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:07:47,322 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:14:56,439 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:14:56,569 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:14:56,585 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:14:56,589 - INFO - uvicorn.error - Finished server process [87]
+2023-11-16 12:15:00,158 - INFO - app.main - ---Starting App---
+2023-11-16 12:15:00,262 - INFO - uvicorn.error - Started server process [96]
+2023-11-16 12:15:00,263 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:15:00,264 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:15:34,357 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:15:34,459 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:15:34,460 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:15:34,461 - INFO - uvicorn.error - Finished server process [96]
+2023-11-16 12:15:37,009 - INFO - app.main - ---Starting App---
+2023-11-16 12:15:37,111 - INFO - uvicorn.error - Started server process [98]
+2023-11-16 12:15:37,112 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:15:37,113 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:19:05,777 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:19:05,915 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:19:05,932 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:19:05,936 - INFO - uvicorn.error - Finished server process [98]
+2023-11-16 12:19:22,881 - INFO - app.main - ---Starting App---
+2023-11-16 12:19:23,007 - INFO - uvicorn.error - Started server process [110]
+2023-11-16 12:19:23,009 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:19:23,012 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:19:57,042 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:19:57,144 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:19:57,146 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:19:57,148 - INFO - uvicorn.error - Finished server process [110]
+2023-11-16 12:19:59,853 - INFO - app.main - ---Starting App---
+2023-11-16 12:19:59,963 - INFO - uvicorn.error - Started server process [112]
+2023-11-16 12:19:59,964 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:19:59,966 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:20:34,890 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:20:34,993 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:20:34,994 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:20:34,995 - INFO - uvicorn.error - Finished server process [112]
+2023-11-16 12:20:37,668 - INFO - app.main - ---Starting App---
+2023-11-16 12:20:37,808 - INFO - uvicorn.error - Started server process [114]
+2023-11-16 12:20:37,809 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:20:37,810 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:20:48,448 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:20:48,551 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:20:48,552 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:20:48,554 - INFO - uvicorn.error - Finished server process [114]
+2023-11-16 12:20:51,308 - INFO - app.main - ---Starting App---
+2023-11-16 12:20:51,499 - INFO - uvicorn.error - Started server process [116]
+2023-11-16 12:20:51,500 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:20:51,503 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:21:16,215 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:21:16,316 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:21:16,317 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:21:16,319 - INFO - uvicorn.error - Finished server process [116]
+2023-11-16 12:21:19,078 - INFO - app.main - ---Starting App---
+2023-11-16 12:21:19,209 - INFO - uvicorn.error - Started server process [118]
+2023-11-16 12:21:19,211 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:21:19,213 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:21:41,392 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:21:41,505 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:21:41,507 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:21:41,508 - INFO - uvicorn.error - Finished server process [118]
+2023-11-16 12:21:44,417 - INFO - app.main - ---Starting App---
+2023-11-16 12:21:44,551 - INFO - uvicorn.error - Started server process [120]
+2023-11-16 12:21:44,553 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:21:44,555 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:21:54,189 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:21:54,291 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:21:54,292 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:21:54,294 - INFO - uvicorn.error - Finished server process [120]
+2023-11-16 12:21:57,278 - INFO - app.main - ---Starting App---
+2023-11-16 12:21:57,376 - INFO - uvicorn.error - Started server process [122]
+2023-11-16 12:21:57,377 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:21:57,379 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:22:08,932 - INFO - uvicorn.error - Shutting down
+2023-11-16 12:22:09,047 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-16 12:22:09,054 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-16 12:22:09,056 - INFO - uvicorn.error - Finished server process [122]

@@ -4,3 +4,4 @@ from .system import System, SystemCreate, SystemUpdate, SystemInDB, SystemBase #
 from .entity import Entity, EntityCreate, EntityUpdate, EntityInDB, EntityBase # noqa: F401, E261
 from .attribute import Attribute, AttributeCreate, AttributeUpdate, AttributeInDB, AttributeBase # noqa: F401, E261
 from .businessrule import BusinessRule, BusinessRuleCreate, BusinessRuleUpdate, BusinessRuleInDB, BusinessRuleBase # noqa: F401, E261
+from .customer import Customer, CustomerCreate, CustomerUpdate, CustomerInDB, CustomerBase # noqa: F401, E261
