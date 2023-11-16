@@ -5,3 +5,4 @@ from .entity import Entity, EntityCreate, EntityUpdate, EntityInDB, EntityBase #
 from .attribute import Attribute, AttributeCreate, AttributeUpdate, AttributeInDB, AttributeBase # noqa: F401, E261
 from .businessrule import BusinessRule, BusinessRuleCreate, BusinessRuleUpdate, BusinessRuleInDB, BusinessRuleBase # noqa: F401, E261
 from .customer import Customer, CustomerCreate, CustomerUpdate, CustomerInDB, CustomerBase # noqa: F401, E261
+from .relationship import Relationship, RelationshipCreate, RelationshipUpdate, RelationshipInDB, RelationshipBase # noqa: F401, E261
