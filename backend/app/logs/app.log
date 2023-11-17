@@ -45187,3 +45187,1789 @@ FROM dd_customer
 2023-11-16 12:52:39,487 - INFO - uvicorn.error - Waiting for application shutdown.
 2023-11-16 12:52:39,493 - INFO - uvicorn.error - Application shutdown complete.
 2023-11-16 12:52:39,495 - INFO - uvicorn.error - Finished server process [171]
+2023-11-16 12:52:43,623 - INFO - app.main - ---Starting App---
+2023-11-16 12:52:43,769 - INFO - uvicorn.error - Started server process [173]
+2023-11-16 12:52:43,771 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 12:52:43,773 - INFO - uvicorn.error - Application startup complete.
+2023-11-16 12:53:17,962 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-16 12:53:17,963 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-16 12:53:17,985 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-16 12:53:17,986 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-16 12:53:18,013 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-16 12:53:18,014 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-16 12:53:18,032 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:18,040 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-16 12:53:18,043 - INFO - sqlalchemy.engine.Engine - [generated in 0.00161s] ('marcos.800nascimento@gmail.com',)
+2023-11-16 12:53:18,424 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:24,820 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:24,828 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:24,836 - INFO - sqlalchemy.engine.Engine - [generated in 0.00842s] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:24,868 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+ LIMIT ? OFFSET ?
+2023-11-16 12:53:24,873 - INFO - sqlalchemy.engine.Engine - [generated in 0.00436s] (100, 0)
+2023-11-16 12:53:24,921 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:29,452 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:29,455 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:29,457 - INFO - sqlalchemy.engine.Engine - [cached since 4.622s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:29,483 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_relationship ("ParentEntityID", "ChildEntityID", "Description", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_relationship.id
+2023-11-16 12:53:29,484 - INFO - sqlalchemy.engine.Engine - [generated in 0.00141s] (0, 0, 'string', datetime.datetime(2023, 11, 16, 12, 53, 29, 483655), datetime.datetime(2023, 11, 16, 12, 53, 29, 483670))
+2023-11-16 12:53:29,715 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 12:53:29,761 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:29,765 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:29,767 - INFO - sqlalchemy.engine.Engine - [generated in 0.00158s] (1,)
+2023-11-16 12:53:29,786 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:33,349 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:33,351 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:33,353 - INFO - sqlalchemy.engine.Engine - [cached since 8.518s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:33,383 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_relationship ("ParentEntityID", "ChildEntityID", "Description", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_relationship.id
+2023-11-16 12:53:33,385 - INFO - sqlalchemy.engine.Engine - [cached since 3.902s ago] (0, 1, 'string', datetime.datetime(2023, 11, 16, 12, 53, 33, 383395), datetime.datetime(2023, 11, 16, 12, 53, 33, 383403))
+2023-11-16 12:53:33,405 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 12:53:33,436 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:33,438 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:33,439 - INFO - sqlalchemy.engine.Engine - [cached since 3.673s ago] (2,)
+2023-11-16 12:53:33,455 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:37,363 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:37,365 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:37,367 - INFO - sqlalchemy.engine.Engine - [cached since 12.53s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:37,384 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_relationship ("ParentEntityID", "ChildEntityID", "Description", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_relationship.id
+2023-11-16 12:53:37,386 - INFO - sqlalchemy.engine.Engine - [cached since 7.903s ago] (2, 1, 'string', datetime.datetime(2023, 11, 16, 12, 53, 37, 384780), datetime.datetime(2023, 11, 16, 12, 53, 37, 384787))
+2023-11-16 12:53:37,405 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 12:53:37,433 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:37,437 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:37,439 - INFO - sqlalchemy.engine.Engine - [cached since 7.674s ago] (3,)
+2023-11-16 12:53:37,457 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:40,643 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:40,645 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:40,646 - INFO - sqlalchemy.engine.Engine - [cached since 15.81s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:40,665 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_relationship ("ParentEntityID", "ChildEntityID", "Description", created_at, updated_at) VALUES (?, ?, ?, ?, ?) RETURNING dd_relationship.id
+2023-11-16 12:53:40,667 - INFO - sqlalchemy.engine.Engine - [cached since 11.18s ago] (2, 2, 'string', datetime.datetime(2023, 11, 16, 12, 53, 40, 665023), datetime.datetime(2023, 11, 16, 12, 53, 40, 665034))
+2023-11-16 12:53:40,682 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 12:53:40,715 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:40,717 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:40,719 - INFO - sqlalchemy.engine.Engine - [cached since 10.95s ago] (4,)
+2023-11-16 12:53:40,734 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:46,735 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:46,739 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:46,742 - INFO - sqlalchemy.engine.Engine - [cached since 21.91s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:46,758 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:46,762 - INFO - sqlalchemy.engine.Engine - [generated in 0.00354s] (1,)
+2023-11-16 12:53:46,776 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:53:56,698 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:56,701 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:53:56,706 - INFO - sqlalchemy.engine.Engine - [cached since 31.87s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:53:56,734 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:56,737 - INFO - sqlalchemy.engine.Engine - [cached since 9.979s ago] (1,)
+2023-11-16 12:53:56,768 - INFO - sqlalchemy.engine.Engine - UPDATE dd_relationship SET "ParentEntityID"=?, "ChildEntityID"=?, "Description"=?, updated_at=? WHERE dd_relationship.id = ?
+2023-11-16 12:53:56,771 - INFO - sqlalchemy.engine.Engine - [generated in 0.00269s] (1, 1, 'Desc', datetime.datetime(2023, 11, 16, 12, 53, 56, 768496), 1)
+2023-11-16 12:53:56,792 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 12:53:56,819 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:53:56,821 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:53:56,826 - INFO - sqlalchemy.engine.Engine - [cached since 27.06s ago] (1,)
+2023-11-16 12:53:56,842 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-16 12:54:00,249 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-16 12:54:00,253 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-16 12:54:00,257 - INFO - sqlalchemy.engine.Engine - [cached since 35.42s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-16 12:54:00,274 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:54:00,276 - INFO - sqlalchemy.engine.Engine - [cached since 13.52s ago] (2,)
+2023-11-16 12:54:00,288 - INFO - sqlalchemy.engine.Engine - SELECT dd_relationship.id, dd_relationship."ParentEntityID", dd_relationship."ChildEntityID", dd_relationship."Description", dd_relationship.created_at, dd_relationship.updated_at 
+FROM dd_relationship 
+WHERE dd_relationship.id = ?
+2023-11-16 12:54:00,290 - INFO - sqlalchemy.engine.Engine - [cached since 13.53s ago] (2,)
+2023-11-16 12:54:00,301 - INFO - sqlalchemy.engine.Engine - DELETE FROM dd_relationship WHERE dd_relationship.id = ?
+2023-11-16 12:54:00,302 - INFO - sqlalchemy.engine.Engine - [generated in 0.00108s] (2,)
+2023-11-16 12:54:00,315 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-16 18:49:59,580 - INFO - app.main - ---Starting App---
+2023-11-16 18:49:59,704 - INFO - uvicorn.error - Started server process [9]
+2023-11-16 18:49:59,706 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-16 18:49:59,706 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:13:54,210 - INFO - app.main - ---Starting App---
+2023-11-17 12:13:54,381 - INFO - uvicorn.error - Started server process [9]
+2023-11-17 12:13:54,383 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:13:54,385 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:21:33,401 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:21:33,551 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:21:33,579 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:21:33,583 - INFO - uvicorn.error - Finished server process [9]
+2023-11-17 12:21:37,901 - INFO - app.main - ---Starting App---
+2023-11-17 12:21:38,090 - INFO - uvicorn.error - Started server process [18]
+2023-11-17 12:21:38,091 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:21:38,092 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:22:11,820 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:22:11,922 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:22:11,924 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:22:11,924 - INFO - uvicorn.error - Finished server process [18]
+2023-11-17 12:22:14,576 - INFO - app.main - ---Starting App---
+2023-11-17 12:22:14,698 - INFO - uvicorn.error - Started server process [20]
+2023-11-17 12:22:14,699 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:22:14,700 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:22:24,238 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:22:24,340 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:22:24,341 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:22:24,342 - INFO - uvicorn.error - Finished server process [20]
+2023-11-17 12:22:27,950 - INFO - app.main - ---Starting App---
+2023-11-17 12:22:28,158 - INFO - uvicorn.error - Started server process [22]
+2023-11-17 12:22:28,160 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:22:28,161 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:22:37,495 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:22:37,597 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:22:37,598 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:22:37,599 - INFO - uvicorn.error - Finished server process [22]
+2023-11-17 12:22:40,300 - INFO - app.main - ---Starting App---
+2023-11-17 12:22:40,446 - INFO - uvicorn.error - Started server process [24]
+2023-11-17 12:22:40,447 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:22:40,448 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:22:50,284 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:22:50,385 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:22:50,386 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:22:50,387 - INFO - uvicorn.error - Finished server process [24]
+2023-11-17 12:22:53,175 - INFO - app.main - ---Starting App---
+2023-11-17 12:22:53,344 - INFO - uvicorn.error - Started server process [26]
+2023-11-17 12:22:53,345 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:22:53,346 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:23:02,978 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:23:03,080 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:23:03,081 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:23:03,082 - INFO - uvicorn.error - Finished server process [26]
+2023-11-17 12:23:06,078 - INFO - app.main - ---Starting App---
+2023-11-17 12:23:06,238 - INFO - uvicorn.error - Started server process [28]
+2023-11-17 12:23:06,239 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:23:06,240 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:23:15,889 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:23:15,991 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:23:15,992 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:23:15,993 - INFO - uvicorn.error - Finished server process [28]
+2023-11-17 12:23:19,243 - INFO - app.main - ---Starting App---
+2023-11-17 12:23:19,500 - INFO - uvicorn.error - Started server process [30]
+2023-11-17 12:23:19,502 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:23:19,504 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:23:52,676 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:23:52,777 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:23:52,778 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:23:52,779 - INFO - uvicorn.error - Finished server process [30]
+2023-11-17 12:23:55,576 - INFO - app.main - ---Starting App---
+2023-11-17 12:23:55,729 - INFO - uvicorn.error - Started server process [45]
+2023-11-17 12:23:55,731 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:23:55,732 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:24:18,813 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:24:18,914 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:24:18,915 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:24:18,916 - INFO - uvicorn.error - Finished server process [45]
+2023-11-17 12:24:22,134 - INFO - app.main - ---Starting App---
+2023-11-17 12:24:22,294 - INFO - uvicorn.error - Started server process [47]
+2023-11-17 12:24:22,295 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:24:22,297 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:24:46,391 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:24:46,493 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:24:46,494 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:24:46,495 - INFO - uvicorn.error - Finished server process [47]
+2023-11-17 12:24:49,311 - INFO - app.main - ---Starting App---
+2023-11-17 12:24:49,477 - INFO - uvicorn.error - Started server process [49]
+2023-11-17 12:24:49,479 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:24:49,481 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:26:09,372 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:26:09,473 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:26:09,475 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:26:09,476 - INFO - uvicorn.error - Finished server process [49]
+2023-11-17 12:26:12,306 - INFO - app.main - ---Starting App---
+2023-11-17 12:26:12,447 - INFO - uvicorn.error - Started server process [51]
+2023-11-17 12:26:12,449 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:26:12,450 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:26:35,144 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:26:35,246 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:26:35,247 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:26:35,247 - INFO - uvicorn.error - Finished server process [51]
+2023-11-17 12:26:37,963 - INFO - app.main - ---Starting App---
+2023-11-17 12:26:38,102 - INFO - uvicorn.error - Started server process [53]
+2023-11-17 12:26:38,104 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:26:38,105 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:27:12,538 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:27:12,641 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:27:12,642 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:27:12,643 - INFO - uvicorn.error - Finished server process [53]
+2023-11-17 12:27:15,670 - INFO - app.main - ---Starting App---
+2023-11-17 12:27:15,808 - INFO - uvicorn.error - Started server process [55]
+2023-11-17 12:27:15,809 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:27:15,810 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:27:25,846 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:27:25,948 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:27:25,949 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:27:25,949 - INFO - uvicorn.error - Finished server process [55]
+2023-11-17 12:27:29,042 - INFO - app.main - ---Starting App---
+2023-11-17 12:27:29,288 - INFO - uvicorn.error - Started server process [57]
+2023-11-17 12:27:29,290 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:27:29,292 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:28:04,228 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:28:04,329 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:28:04,330 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:28:04,331 - INFO - uvicorn.error - Finished server process [57]
+2023-11-17 12:28:07,341 - INFO - app.main - ---Starting App---
+2023-11-17 12:28:07,538 - INFO - uvicorn.error - Started server process [59]
+2023-11-17 12:28:07,540 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:28:07,542 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:28:17,479 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:28:17,581 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:28:17,582 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:28:17,583 - INFO - uvicorn.error - Finished server process [59]
+2023-11-17 12:29:46,417 - INFO - app.main - ---Starting App---
+2023-11-17 12:29:46,629 - INFO - uvicorn.error - Started server process [9]
+2023-11-17 12:29:46,630 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:29:46,632 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:29:57,873 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-17 12:29:57,875 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:29:57,894 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-17 12:29:57,897 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:29:57,923 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-17 12:29:57,925 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:29:57,938 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:29:57,944 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-17 12:29:57,946 - INFO - sqlalchemy.engine.Engine - [generated in 0.00128s] ('marcos.800nascimento@gmail.com',)
+2023-11-17 12:29:58,294 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:30:04,802 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:30:04,806 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:30:04,807 - INFO - sqlalchemy.engine.Engine - [generated in 0.00199s] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:30:04,856 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+ LIMIT ? OFFSET ?
+2023-11-17 12:30:04,857 - INFO - sqlalchemy.engine.Engine - [generated in 0.00147s] (100, 0)
+2023-11-17 12:30:07,090 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:30:10,350 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:30:10,352 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:30:10,353 - INFO - sqlalchemy.engine.Engine - [cached since 5.548s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:30:10,553 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:30:10,554 - INFO - sqlalchemy.engine.Engine - [generated in 0.00095s] (0, 'string', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 10, 553313), datetime.datetime(2023, 11, 17, 12, 30, 10, 553319))
+2023-11-17 12:30:10,588 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:30:10,594 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type uielementtype but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'string', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 10, 553313), datetime.datetime(2023, 11, 17, 12, 30, 10, 553319))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:30:26,065 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:30:26,068 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:30:26,069 - INFO - sqlalchemy.engine.Engine - [cached since 21.26s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:30:26,090 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:30:26,091 - INFO - sqlalchemy.engine.Engine - [cached since 15.54s ago] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 26, 90253), datetime.datetime(2023, 11, 17, 12, 30, 26, 90261))
+2023-11-17 12:30:26,099 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:30:26,107 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type uielementtype but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 26, 90253), datetime.datetime(2023, 11, 17, 12, 30, 26, 90261))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:30:42,006 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:30:42,010 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:30:42,017 - INFO - sqlalchemy.engine.Engine - [cached since 37.21s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:30:42,032 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:30:42,033 - INFO - sqlalchemy.engine.Engine - [cached since 31.48s ago] (0, 'Checkbox', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 42, 32115), datetime.datetime(2023, 11, 17, 12, 30, 42, 32120))
+2023-11-17 12:30:42,099 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:30:42,104 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type uielementtype but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Checkbox', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 30, 42, 32115), datetime.datetime(2023, 11, 17, 12, 30, 42, 32120))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:31:15,737 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:31:15,740 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:31:15,742 - INFO - sqlalchemy.engine.Engine - [cached since 70.94s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:31:15,761 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:31:15,762 - INFO - sqlalchemy.engine.Engine - [cached since 65.21s ago] (0, 'Checkbox', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 31, 15, 761287), datetime.datetime(2023, 11, 17, 12, 31, 15, 761295))
+2023-11-17 12:31:15,770 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:31:15,777 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type uielementtype but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Checkbox', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 31, 15, 761287), datetime.datetime(2023, 11, 17, 12, 31, 15, 761295))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:32:00,500 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:32:00,603 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:32:00,604 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:32:00,606 - INFO - uvicorn.error - Finished server process [9]
+2023-11-17 12:32:04,993 - INFO - app.main - ---Starting App---
+2023-11-17 12:32:05,209 - INFO - uvicorn.error - Started server process [16]
+2023-11-17 12:32:05,210 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:32:05,213 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:32:14,048 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:32:14,149 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:32:14,151 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:32:14,152 - INFO - uvicorn.error - Finished server process [16]
+2023-11-17 12:32:16,967 - INFO - app.main - ---Starting App---
+2023-11-17 12:32:17,075 - INFO - uvicorn.error - Started server process [18]
+2023-11-17 12:32:17,076 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:32:17,078 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:32:26,916 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:32:27,018 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:32:27,020 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:32:27,021 - INFO - uvicorn.error - Finished server process [18]
+2023-11-17 12:32:29,857 - INFO - app.main - ---Starting App---
+2023-11-17 12:32:30,019 - INFO - uvicorn.error - Started server process [20]
+2023-11-17 12:32:30,020 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:32:30,022 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:33:03,981 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-17 12:33:03,982 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:33:03,999 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-17 12:33:04,000 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:33:04,019 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-17 12:33:04,020 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:33:04,031 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:33:04,037 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-17 12:33:04,038 - INFO - sqlalchemy.engine.Engine - [generated in 0.00133s] ('marcos.800nascimento@gmail.com',)
+2023-11-17 12:33:04,400 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:33:14,764 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:33:14,769 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:33:14,772 - INFO - sqlalchemy.engine.Engine - [generated in 0.00346s] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:33:14,813 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:33:14,815 - INFO - sqlalchemy.engine.Engine - [generated in 0.00252s] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 14, 813073), datetime.datetime(2023, 11, 17, 12, 33, 14, 813083))
+2023-11-17 12:33:14,833 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:33:14,841 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 14, 813073), datetime.datetime(2023, 11, 17, 12, 33, 14, 813083))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:33:28,351 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:33:28,353 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:33:28,358 - INFO - sqlalchemy.engine.Engine - [cached since 13.59s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:33:28,573 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:33:28,574 - INFO - sqlalchemy.engine.Engine - [cached since 13.76s ago] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 28, 572806), datetime.datetime(2023, 11, 17, 12, 33, 28, 572819))
+2023-11-17 12:33:28,584 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:33:28,593 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 28, 572806), datetime.datetime(2023, 11, 17, 12, 33, 28, 572819))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:33:39,325 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:33:39,329 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:33:39,330 - INFO - sqlalchemy.engine.Engine - [cached since 24.56s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:33:39,347 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:33:39,348 - INFO - sqlalchemy.engine.Engine - [cached since 24.54s ago] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 39, 346980), datetime.datetime(2023, 11, 17, 12, 33, 39, 346990))
+2023-11-17 12:33:39,365 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:33:39,377 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 33, 39, 346980), datetime.datetime(2023, 11, 17, 12, 33, 39, 346990))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:36:25,327 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:36:25,481 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:36:25,506 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:36:25,511 - INFO - uvicorn.error - Finished server process [20]
+2023-11-17 12:36:31,875 - INFO - app.main - ---Starting App---
+2023-11-17 12:36:32,116 - INFO - uvicorn.error - Started server process [41]
+2023-11-17 12:36:32,118 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:36:32,120 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:37:51,014 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:37:51,121 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:37:51,124 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:37:51,125 - INFO - uvicorn.error - Finished server process [41]
+2023-11-17 12:37:54,809 - INFO - app.main - ---Starting App---
+2023-11-17 12:37:54,967 - INFO - uvicorn.error - Started server process [43]
+2023-11-17 12:37:54,969 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:37:54,970 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:38:06,015 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:38:06,117 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:38:06,118 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:38:06,119 - INFO - uvicorn.error - Finished server process [43]
+2023-11-17 12:38:09,454 - INFO - app.main - ---Starting App---
+2023-11-17 12:38:09,633 - INFO - uvicorn.error - Started server process [45]
+2023-11-17 12:38:09,635 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:38:09,636 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:38:10,610 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-17 12:38:10,611 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:38:10,635 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-17 12:38:10,636 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:38:10,661 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-17 12:38:10,663 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:38:10,681 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:38:10,687 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:38:10,691 - INFO - sqlalchemy.engine.Engine - [generated in 0.00342s] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:38:10,732 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:38:10,735 - INFO - sqlalchemy.engine.Engine - [generated in 0.00172s] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 10, 732598), datetime.datetime(2023, 11, 17, 12, 38, 10, 732605))
+2023-11-17 12:38:10,762 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:38:10,771 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 10, 732598), datetime.datetime(2023, 11, 17, 12, 38, 10, 732605))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:38:25,841 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:38:25,846 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-17 12:38:25,849 - INFO - sqlalchemy.engine.Engine - [generated in 0.00286s] ('marcos.800nascimento@gmail.com',)
+2023-11-17 12:38:26,168 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:38:30,119 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:38:30,185 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:38:30,187 - INFO - sqlalchemy.engine.Engine - [cached since 19.5s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:38:30,202 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:38:30,206 - INFO - sqlalchemy.engine.Engine - [cached since 19.47s ago] (0, 'string', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 30, 202691), datetime.datetime(2023, 11, 17, 12, 38, 30, 202705))
+2023-11-17 12:38:30,217 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:38:30,222 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'string', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 30, 202691), datetime.datetime(2023, 11, 17, 12, 38, 30, 202705))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:38:39,614 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:38:39,616 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:38:39,620 - INFO - sqlalchemy.engine.Engine - [cached since 28.93s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:38:39,634 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:38:39,636 - INFO - sqlalchemy.engine.Engine - [cached since 28.9s ago] (0, 'Input field', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 39, 634221), datetime.datetime(2023, 11, 17, 12, 38, 39, 634230))
+2023-11-17 12:38:39,644 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:38:39,649 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DatatypeMismatchError'>: column "ElementType" is of type tipodeelemento but expression is of type character varying
+HINT:  You will need to rewrite or cast the expression.
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Input field', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 38, 39, 634221), datetime.datetime(2023, 11, 17, 12, 38, 39, 634230))]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+2023-11-17 12:39:37,942 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:39:38,049 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:39:38,052 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:39:38,053 - INFO - uvicorn.error - Finished server process [45]
+2023-11-17 12:39:42,266 - INFO - app.main - ---Starting App---
+2023-11-17 12:39:42,384 - INFO - uvicorn.error - Started server process [52]
+2023-11-17 12:39:42,385 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:39:42,386 - INFO - uvicorn.error - Application startup complete.
+2023-11-17 12:39:44,109 - INFO - sqlalchemy.engine.Engine - select version()
+2023-11-17 12:39:44,110 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:39:44,126 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2023-11-17 12:39:44,128 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:39:44,148 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2023-11-17 12:39:44,151 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2023-11-17 12:39:44,169 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:39:44,173 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:39:44,175 - INFO - sqlalchemy.engine.Engine - [generated in 0.00150s] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:39:44,199 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:39:44,199 - INFO - sqlalchemy.engine.Engine - [generated in 0.00091s] (0, 'Input field', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 39, 44, 198935), datetime.datetime(2023, 11, 17, 12, 39, 44, 198942))
+2023-11-17 12:39:45,746 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:39:45,752 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.InvalidTextRepresentationError'>: invalid input value for enum tipodeelemento: "Input field"
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (0, 'Input field', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 39, 44, 198935), datetime.datetime(2023, 11, 17, 12, 39, 44, 198942))]
+(Background on this error at: http://sqlalche.me/e/14/dbapi)
+2023-11-17 12:40:20,672 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:20,675 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".email = ?
+2023-11-17 12:40:20,677 - INFO - sqlalchemy.engine.Engine - [generated in 0.00168s] ('marcos.800nascimento@gmail.com',)
+2023-11-17 12:40:21,025 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:40:28,945 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:29,026 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:40:29,027 - INFO - sqlalchemy.engine.Engine - [cached since 44.85s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:40:29,045 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:40:29,046 - INFO - sqlalchemy.engine.Engine - [cached since 44.85s ago] (0, 'Label', 'string', 'string', 'string', 'string', 0, datetime.datetime(2023, 11, 17, 12, 40, 29, 45137), datetime.datetime(2023, 11, 17, 12, 40, 29, 45144))
+2023-11-17 12:40:29,087 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-17 12:40:29,132 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:29,134 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:40:29,138 - INFO - sqlalchemy.engine.Engine - [generated in 0.00325s] (1,)
+2023-11-17 12:40:29,152 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:40:43,760 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:43,762 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:40:43,767 - INFO - sqlalchemy.engine.Engine - [cached since 59.59s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:40:43,784 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:40:43,785 - INFO - sqlalchemy.engine.Engine - [cached since 59.59s ago] (2, 'Input field', 'string', 'string', 'string', 'string', 2, datetime.datetime(2023, 11, 17, 12, 40, 43, 783956), datetime.datetime(2023, 11, 17, 12, 40, 43, 783968))
+2023-11-17 12:40:43,797 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:40:43,802 - ERROR - uvicorn.error - Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 398, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./app/api/api_v1/endpoints/uielement.py", line 40, in create_uielement
+    uielement = await repositories.uielement.create(db, obj_in=uielement_in)
+  File "./app/db/repositories/crud_uielement.py", line 22, in create
+    await db.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/ext/asyncio/session.py", line 245, in commit
+    return await greenlet_spawn(self.sync_session.commit)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 93, in greenlet_spawn
+    result = context.switch(value)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1283, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 709, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 688, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3099, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3239, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3199, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 442, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 609, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 241, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1218, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1443, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 310, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1312, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1852, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 180, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1628, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 663, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 350, in execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 513, in _handle_exception
+    raise error
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 346, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 41, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 86, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 342, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 290, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 509, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.InvalidTextRepresentationError'>: invalid input value for enum tipodeelemento: "Input field"
+[SQL: INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id]
+[parameters: (2, 'Input field', 'string', 'string', 'string', 'string', 2, datetime.datetime(2023, 11, 17, 12, 40, 43, 783956), datetime.datetime(2023, 11, 17, 12, 40, 43, 783968))]
+(Background on this error at: http://sqlalche.me/e/14/dbapi)
+2023-11-17 12:40:51,858 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:51,862 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:40:51,865 - INFO - sqlalchemy.engine.Engine - [cached since 67.69s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:40:51,886 - INFO - sqlalchemy.engine.Engine - INSERT INTO dd_uielement ("EntityID", "ElementType", "ElementName", "ElementDescription", "TypingMask", "ValidationRules", "SystemID", created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING dd_uielement.id
+2023-11-17 12:40:51,887 - INFO - sqlalchemy.engine.Engine - [cached since 67.69s ago] (2, 'Input Field', 'string', 'string', 'string', 'string', 2, datetime.datetime(2023, 11, 17, 12, 40, 51, 886471), datetime.datetime(2023, 11, 17, 12, 40, 51, 886500))
+2023-11-17 12:40:51,899 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-17 12:40:51,925 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:51,927 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:40:51,929 - INFO - sqlalchemy.engine.Engine - [cached since 22.79s ago] (2,)
+2023-11-17 12:40:51,942 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:40:58,656 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:40:58,659 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:40:58,660 - INFO - sqlalchemy.engine.Engine - [cached since 74.49s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:40:58,675 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:40:58,676 - INFO - sqlalchemy.engine.Engine - [generated in 0.00109s] (1,)
+2023-11-17 12:40:58,691 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:42:57,791 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:42:57,794 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:42:57,796 - INFO - sqlalchemy.engine.Engine - [cached since 193.6s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:42:57,814 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:42:57,817 - INFO - sqlalchemy.engine.Engine - [cached since 119.1s ago] (1,)
+2023-11-17 12:42:57,835 - INFO - sqlalchemy.engine.Engine - UPDATE dd_uielement SET "EntityID"=?, "ElementName"=?, "ElementDescription"=?, "TypingMask"=?, "SystemID"=?, updated_at=? WHERE dd_uielement.id = ?
+2023-11-17 12:42:57,836 - INFO - sqlalchemy.engine.Engine - [generated in 0.00160s] (1, 'Reaction', 'Waits', '000.000.000-00', 1, datetime.datetime(2023, 11, 17, 12, 42, 57, 835237), 1)
+2023-11-17 12:42:57,856 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-17 12:42:57,881 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:42:57,884 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:42:57,888 - INFO - sqlalchemy.engine.Engine - [cached since 148.8s ago] (1,)
+2023-11-17 12:42:57,902 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2023-11-17 12:43:02,652 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2023-11-17 12:43:02,655 - INFO - sqlalchemy.engine.Engine - SELECT "user".id, "user".full_name, "user".email, "user".hashed_password, "user".is_active, "user".created_at, "user".updated_at 
+FROM "user" 
+WHERE "user".id = ?
+2023-11-17 12:43:02,657 - INFO - sqlalchemy.engine.Engine - [cached since 198.5s ago] ('4b641b88-cdb1-4895-97de-02c0820561f8',)
+2023-11-17 12:43:02,673 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:43:02,674 - INFO - sqlalchemy.engine.Engine - [cached since 124s ago] (2,)
+2023-11-17 12:43:02,686 - INFO - sqlalchemy.engine.Engine - SELECT dd_uielement.id, dd_uielement."EntityID", dd_uielement."ElementType", dd_uielement."ElementName", dd_uielement."ElementDescription", dd_uielement."TypingMask", dd_uielement."ValidationRules", dd_uielement."SystemID", dd_uielement.created_at, dd_uielement.updated_at 
+FROM dd_uielement 
+WHERE dd_uielement.id = ?
+2023-11-17 12:43:02,687 - INFO - sqlalchemy.engine.Engine - [cached since 124s ago] (2,)
+2023-11-17 12:43:02,701 - INFO - sqlalchemy.engine.Engine - DELETE FROM dd_uielement WHERE dd_uielement.id = ?
+2023-11-17 12:43:02,703 - INFO - sqlalchemy.engine.Engine - [generated in 0.00187s] (2,)
+2023-11-17 12:43:02,716 - INFO - sqlalchemy.engine.Engine - COMMIT
+2023-11-17 12:43:14,540 - INFO - uvicorn.error - Shutting down
+2023-11-17 12:43:14,644 - INFO - uvicorn.error - Waiting for application shutdown.
+2023-11-17 12:43:14,645 - INFO - uvicorn.error - Application shutdown complete.
+2023-11-17 12:43:14,646 - INFO - uvicorn.error - Finished server process [52]
+2023-11-17 12:43:20,855 - INFO - app.main - ---Starting App---
+2023-11-17 12:43:21,091 - INFO - uvicorn.error - Started server process [59]
+2023-11-17 12:43:21,092 - INFO - uvicorn.error - Waiting for application startup.
+2023-11-17 12:43:21,094 - INFO - uvicorn.error - Application startup complete.
